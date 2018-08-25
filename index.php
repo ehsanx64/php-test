@@ -11,8 +11,11 @@ require __DIR__ . DIRECTORY_SEPARATOR . 'utils.php';
 		<article>
 			<h2><a href="<?php echo getUrl('sabre-event'); ?>">sabre/event</a></h2>
 			<h3>Event emitter library</h3>
-			<div>
-			</div>
+		</article>
+		<hr />
+		<article>
+			<h2><a href="<?php echo getUrl('phpoffice'); ?>">phpoffice</a></h2>
+			<h3>PHP Office library</h3>
 		</article>
 	</section>
 </body>
