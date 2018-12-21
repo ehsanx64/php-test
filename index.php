@@ -13,10 +13,6 @@ require __DIR__ . DIRECTORY_SEPARATOR . 'utils.php';
 			<h3>Event emitter library</h3>
 		</article>
 		<hr />
-		<article>
-			<h2><a href="<?php echo getUrl('phpoffice'); ?>">phpoffice</a></h2>
-			<h3>PHP Office library</h3>
-		</article>
 	</section>
 </body>
 </html>

@@ -1,6 +1,5 @@
 {
     "require": {
-        "sabre/event": "^5",
-        "phpoffice/phpspreadsheet": "^1.4"
+        "sabre/event": "^5"
     }
 }

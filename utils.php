@@ -1,6 +1,6 @@
 <?php
 // Configuration
-define('BASE_URL', 'http://phplay.local');
+define('BASE_URL', 'http://php-test.local:8104');
 define('DS', DIRECTORY_SEPARATOR);
 
 // Include composer autoloader
