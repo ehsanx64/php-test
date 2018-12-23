@@ -1,6 +1,6 @@
 <?php
 // Configuration
-define('BASE_URL', 'http://php-test.local:8104');
+define('BASE_URL', 'http://locdev:8104');
 define('DS', DIRECTORY_SEPARATOR);
 
 // Include composer autoloader
