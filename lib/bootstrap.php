@@ -15,14 +15,12 @@ define('MODEL_DIR', BASE_DIR . DS . 'models');
 define('CONTROLLER_DIR', BASE_DIR . DS . 'controllers');
 define('VIEW_DIR', BASE_DIR . DS . 'views');
 define('LAYOUT_DIR', BASE_DIR . DS . 'layout');
-define('BASE_URL', 'http://locdev:8104');
 
 require BASE_DIR . DS . 'vendor' . DS . 'autoload.php';
 require LIB_DIR . DS . 'Controller.php';
 require LIB_DIR . DS . 'Database.php';
 require LIB_DIR . DS . 'Url.php';
 require LIB_DIR . DS . 'Model.php';
-$url = "http://locdev/module/controller/action";
 
 // Get routing parameters
 if (isset($_GET['r'])) {
