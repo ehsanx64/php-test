@@ -1,5 +1,6 @@
 {
     "require": {
-        "sabre/event": "^5"
+        "sabre/event": "^5",
+		"ehsanx64/phplib": "2.0.0"
     }
 }

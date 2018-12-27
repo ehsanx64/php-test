@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "888c15d4d177a9d2273859cf0b98c056",
+    "content-hash": "6e18f56dbe8dda8274eec5ce3e87ee42",
     "packages": [
+        {
+            "name": "ehsanx64/phplib",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ehsanx64/phplib.git",
+                "reference": "5921e3ff400492642dfd83bce337beee69a5788b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ehsanx64/phplib/zipball/5921e3ff400492642dfd83bce337beee69a5788b",
+                "reference": "5921e3ff400492642dfd83bce337beee69a5788b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ehsanx64\\phplib\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ehsan Mohammadi",
+                    "email": "admin@ehsanm.net",
+                    "homepage": "http://ehsanm.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "General Purpose PHP Library",
+            "homepage": "https://github.com/ehsanx64/phplib",
+            "keywords": [
+                "general",
+                "utility"
+            ],
+            "time": "2018-12-27T13:39:43+00:00"
+        },
         {
             "name": "sabre/event",
             "version": "5.0.3",
