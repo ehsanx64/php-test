@@ -1,4 +1,7 @@
 <?php
-$this->pageTitle = 'cont mod';
+$this->pageTitle = 'Test List';
 ?>
-<h1>Index action</h1>
+<h1>Test List</h1>
+<ul>
+	<li><a href="/sabreevent/index">SabreEvent</a></li>
+</ul>

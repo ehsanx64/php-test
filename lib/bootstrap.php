@@ -48,24 +48,47 @@ if (!isset($get[1]) || empty($get[1])) {
 }
 
 // Construct controller path
-$controllerFile = CONTROLLER_DIR . DS . ucfirst($get[0]) . '.php';
+// We need to check for hyphens in controller part
+if (strpos($get[0], '-') >= 0) {
+	$cparts = explode('-', $get[0]);
+	$controller = ucfirst($cparts[0]);
+
+	for ($i = 1; $i < count($cparts); $i++) {
+		$controller .= ucfirst($cparts[$i]);
+	}
+} else {
+	$controller = ucfirst($get[0]);
+}
+
+$controllerFile = CONTROLLER_DIR . DS . $controller . '.php';
+
 if (file_exists($controllerFile)) {
 	// Include the controller file
 	require $controllerFile;
 
 	// Get name of controller
-	$controllerName = ucfirst($get[0]) . 'Controller';
+	$controllerName = $controller . 'Controller';
 
 	// Instantiate controller class
 	$controllerInstance = new $controllerName();
 
 	// Get action name
-	$controllerMethod = $get[1];
+	// We need to check for hyphens in action part as well
+	if (strpos($get[1], '-') >= 0) {
+		$aparts = explode('-', $get[1]);
+		$method = $aparts[0];
+
+		for ($i = 1; $i < count($aparts); $i++) {
+			$method .= ucfirst($aparts[$i]);
+		}
+	} else {
+		$method = $get[1];
+	}
 
 	// If a method with action name exists
-	if (method_exists($controllerInstance, $controllerMethod)) {
+	if (method_exists($controllerInstance, $method)) {
 		// Run the method (action)
-		$controllerInstance->$controllerMethod();
+		$controllerInstance->$method();
 	} else {
 		// There is no such controller action
 		die('Controller method not found');
