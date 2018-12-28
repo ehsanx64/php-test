@@ -1,4 +1,5 @@
 <?php
+use ehsanx64\phplib\Module;
 use ehsanx64\phplib\General\Date;
 
 class PhplibController extends Controller {
@@ -14,5 +15,9 @@ class PhplibController extends Controller {
         // What about 2018-01-03?
         $r = Date::isDateString('2018-01-03');
         var_dump($r);
+    }
+
+    public function testModule() {
+        $m = new Module(__DIR__ . '/phplib_mods');
     }
 }
