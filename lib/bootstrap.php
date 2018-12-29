@@ -17,6 +17,7 @@ define('VIEW_DIR', BASE_DIR . DS . 'views');
 define('LAYOUT_DIR', BASE_DIR . DS . 'layout');
 
 require BASE_DIR . DS . 'vendor' . DS . 'autoload.php';
+require LIB_DIR . DS . 'Utility.php';
 require LIB_DIR . DS . 'Controller.php';
 require LIB_DIR . DS . 'Database.php';
 require LIB_DIR . DS . 'Url.php';

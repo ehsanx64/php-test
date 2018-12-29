@@ -1,7 +1,7 @@
 <?php
 //use Root;
 
-printf("Loaded module: %s<br />", __FILE__);
+p(sprintf("Loaded module: %s", __FILE__));
 
 $h = new second\Beta\Helper();
 $h->help();

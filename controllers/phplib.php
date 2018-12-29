@@ -10,11 +10,11 @@ class PhplibController extends Controller {
     public function index() {
         // Is 123 similar to a date?
         $r = Date::isDateString('123');
-        var_dump($r);
+        d($r);
 
         // What about 2018-01-03?
         $r = Date::isDateString('2018-01-03');
-        var_dump($r);
+        d($r);
     }
 
     public function testModule() {
