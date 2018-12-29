@@ -9,12 +9,11 @@ This repository contains test codes I'v written for learning and researching pur
 
 Don't expect anything from this framework, it is super small and primitive and cannot be compared to frameworks like Laravel (or even Slim). Important folders and their purpose are listed down below:
 
-* **assets**: Static files of the project. *.js, *.css etc.
 * **controllers**: Contains the controllers
 * **layout**: It's a possible target for refactoring (ignore it for now)
 * **lib**: Contains the framework code and project wide libraries
 * **models**: Contains the models
-* **public**: Contains the index.php (which starts the whole thing)
+* **public**: Contains the index.php and static assets (*.js, *.css etc)
 * **vendor**: Composer packages are located here
 * **views**: Views are placed here
 
