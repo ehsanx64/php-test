@@ -12,3 +12,7 @@ $this->pageTitle = 'Test List';
 	<li><a href="/sabreevent/index">SabreEvent</a></li>
 	<li></li>
 </ul>
+
+<h3>HashCrypt</h3>
+<h4>Hashing and cryptography related tests</h4>
+<a href="/hash-crypt/md5">md5</a>
