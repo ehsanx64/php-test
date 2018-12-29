@@ -20,3 +20,9 @@ Don't expect anything from this framework, it is super small and primitive and c
 ## CLI
 
 Apart from web-based tests there are also PHP-CLI sources. These files are placed in the cli directory.
+
+## TODO
+
+Following are possible changes/imporvements for the future:
+
+* Merge /layout/ into /views/
