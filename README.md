@@ -26,3 +26,4 @@ Apart from web-based tests there are also PHP-CLI sources. These files are place
 Following are possible changes/imporvements for the future:
 
 * Merge /layout/ into /views/
+* Useful sources should be migrated to phplib module system to be able to reuse it in other projects
