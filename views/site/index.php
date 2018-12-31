@@ -8,6 +8,11 @@ $this->pageTitle = 'Test List';
 <a href="/phplib">phplib</a>
 <hr />
 
+<h3>Array</h3>
+<h4>Array, variable tests</h4>
+<p><a href="/array/byteArray">Array</a></p>
+<hr />
+
 <h3>Other</h3>
 <h4>Miscellaneous tests</h4>
 <p><a href="/sabre-event">SabreEvent</a></p>
