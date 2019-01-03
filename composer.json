@@ -1,7 +1,7 @@
 {
-    "require": {
-        "sabre/event": "^5",
-		"ehsanx64/phplib": "2.0.0",
-        "vlucas/phpdotenv": "^2.5"
-    }
+  "require": {
+	"sabre/event": "^5",
+	"ehsanx64/phplib": "2.0.0",
+	"vlucas/phpdotenv": "^2.5"
+  }
 }
