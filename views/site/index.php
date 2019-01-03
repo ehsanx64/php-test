@@ -16,6 +16,7 @@ $this->pageTitle = 'Test List';
 <h3>Other</h3>
 <h4>Miscellaneous tests</h4>
 <p><a href="/sabre-event">SabreEvent</a></p>
+<p><a href="/dot-env">Dotenv</a></p>
 <hr />
 
 <h3>HashCrypt</h3>
