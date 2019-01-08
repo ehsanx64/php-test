@@ -17,6 +17,7 @@ $this->pageTitle = 'Test List';
 <h4>Miscellaneous tests</h4>
 <p><a href="/sabre-event">SabreEvent</a></p>
 <p><a href="/dot-env">Dotenv</a></p>
+<p><a href="/php-mailer">PhpMailer</a></p>
 <hr />
 
 <h3>HashCrypt</h3>
