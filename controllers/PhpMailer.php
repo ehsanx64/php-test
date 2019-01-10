@@ -1,6 +1,7 @@
 <?php
 use PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use Dotenv\Dotenv;
 
 class PhpMailerController extends Controller {
     public function __construct() {
@@ -8,32 +9,39 @@ class PhpMailerController extends Controller {
 
     public function index() {
 		$mail = new PHPMailer\PHPMailer();
+		$dotenv = new Dotenv(__DIR__);
+		$dotenv->safeLoad();
+
+		$username = getenv('PHPMAILER_USERNAME');
+		$password = getenv('PHPMAILER_PASSWORD');
+		$hostname = getenv('PHPMAILER_HOSTNAME');
+		$target = getenv('PHPMAILER_TARGET');
 
 		// Set mailer to use SMTP
 		$mail->isSMTP();
 
 		// Specify main and backup SMTP servers
-		$mail->Host = '';
+		$mail->Host = $hostname;
 
 		// Enable SMTP authentication
 		$mail->SMTPAuth = true;
 
 		// SMTP username and password
-		$mail->Username = '';
-		$mail->Password = '';
+		$mail->Username = $username;
+		$mail->Password = $password;
 
 		// Enable encryption, only 'tls' is accepted
 //		$mail->SMTPSecure = 'tls';
 
 		// Set 'from' address and 'from name'
-		$mail->From = 'test@ehsanm.net';
+		$mail->From = $username;
 		$mail->FromName = 'Test Account';
 
 		// Add a recipient
-		$mail->addAddress('');
+		$mail->addAddress($target);
 
 		// Set word wrap to 50 characters
-		$mail->WordWrap = 50;
+//		$mail->WordWrap = 50;
 
 		$mail->Subject = 'Hello';
 		$mail->Body = 'Testing some Mailgun awesomness';
