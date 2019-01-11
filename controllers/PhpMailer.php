@@ -21,7 +21,7 @@ class PhpMailerController extends Controller {
 		$mail->isSMTP();
 
 		// Enable debugging for SMTP
-		$mail->SMTPDebug = 2;
+//		$mail->SMTPDebug = 2;
 
 		// Specify main and backup SMTP servers
 		$mail->Host = $hostname;
@@ -33,8 +33,8 @@ class PhpMailerController extends Controller {
 		$mail->Username = $username;
 		$mail->Password = $password;
 
-		// Disable encryption, only 'tls' is accepted
-		$mail->SMTPSecure = false; //'tls';
+		// Enable encryption, only 'tls' is accepted
+		$mail->SMTPSecure = 'tls';
 
 		// Set 'from' address and 'from name'
 		$mail->From = $username;
