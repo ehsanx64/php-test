@@ -1,5 +1,6 @@
 <?php
 use ehsanx64\phplib\Module;
+use ehsanx64\phplib\Translate;
 use ehsanx64\phplib\General\Date;
 
 class PhplibController extends Controller {
@@ -19,5 +20,10 @@ class PhplibController extends Controller {
 
     public function testModule() {
         $m = new Module(__DIR__ . '/phplib_mods');
+    }
+
+    public function testTranslate() {
+        $t = new Translate(dirname(__FILE__) . '/lang');
+        echo $t->t('Hello');
     }
 }

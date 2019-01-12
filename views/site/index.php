@@ -5,7 +5,8 @@ $this->pageTitle = 'Test List';
 
 <h3>phplib</h3>
 <h4>General purpose PHP library</h4>
-<a href="/phplib">phplib</a>
+<p><a href="/phplib">phplib</a></p>
+<p><a href="/phplib/test-translate">Translate</a></p>
 <hr />
 
 <h3>Array</h3>
