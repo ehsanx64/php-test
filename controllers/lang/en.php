@@ -1,4 +1,4 @@
 <?php
 return [
-    'Hello' => 'Salam'
+    'h' => 'Hello'
 ];

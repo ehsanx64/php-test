@@ -1,6 +1,7 @@
 <?php
 use ehsanx64\phplib\Module;
 use ehsanx64\phplib\Translate;
+use ehsanx64\phplib\Environment;
 use ehsanx64\phplib\General\Date;
 
 class PhplibController extends Controller {
@@ -25,5 +26,15 @@ class PhplibController extends Controller {
     public function testTranslate() {
         $t = new Translate(dirname(__FILE__) . '/lang');
         echo $t->t('Hello');
+    }
+
+    public function testEnvironment() {
+        $e = new Environment();
+
+		// Following line causes exception
+//		$e->is('hello');
+
+		// Following must be false
+		dd($e->is('wordpress'));
     }
 }
