@@ -1,8 +1,9 @@
 <?php
+use ehsanx64\phplib;
+use ehsanx64\phplib\Date;
 use ehsanx64\phplib\Module;
 use ehsanx64\phplib\Translate;
 use ehsanx64\phplib\Environment;
-use ehsanx64\phplib\General\Date;
 
 class PhplibController extends Controller {
 
@@ -26,6 +27,10 @@ class PhplibController extends Controller {
     public function testTranslate() {
         $t = new Translate(dirname(__FILE__) . '/lang');
         echo $t->t('Hello');
+
+        $t->setLocale('fa');
+        echo $t->trn('You have %s messages with %s unread', 2, 1);
+//        echo sprintf($t->t('You have %s messages with %s unread'), 2, 1);
     }
 
     public function testEnvironment() {
@@ -35,6 +40,6 @@ class PhplibController extends Controller {
 //		$e->is('hello');
 
 		// Following must be false
-		dd($e->is('wordpress'));
+		p('Is WordPress? ' . ($e->is('wordpress') ? 'Yes' : 'No'));
     }
 }
