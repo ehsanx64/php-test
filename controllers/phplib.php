@@ -26,9 +26,12 @@ class PhplibController extends Controller {
 
     public function testTranslate() {
         $t = new Translate(dirname(__FILE__) . '/lang');
-        echo $t->t('Hello');
+        p('Text to translate: Hello"');
+        p('Result: ' . $t->t('Hello'));
 
+        p('Setting locale to fa...');
         $t->setLocale('fa');
+        p('Translating a complicated string...');
         echo $t->trn('You have %s messages with %s unread', 2, 1);
 //        echo sprintf($t->t('You have %s messages with %s unread'), 2, 1);
     }
