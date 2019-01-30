@@ -21,6 +21,11 @@ Don't expect anything from this framework, it is super small and primitive and c
 
 Apart from web-based tests there are also PHP-CLI sources. These files are placed in the cli directory.
 
+## Raw
+
+There's a raw directory in the root folder, this library contains raw source files that are not connected
+with the framework; in other words these are stand-alone sample sources.
+
 ## TODO
 
 Following are possible changes/imporvements for the future:
