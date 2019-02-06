@@ -4,6 +4,7 @@ use ehsanx64\phplib\Date;
 use ehsanx64\phplib\Module;
 use ehsanx64\phplib\Translate;
 use ehsanx64\phplib\Environment;
+use ehsanx64\phplib\Token;
 
 class PhplibController extends Controller {
 
@@ -44,5 +45,25 @@ class PhplibController extends Controller {
 
 		// Following must be false
 		p('Is WordPress? ' . ($e->is('wordpress') ? 'Yes' : 'No'));
+    }
+
+    public function testToken() {
+        $t = new Token();
+
+        // Default token
+        p('Default token: ' . $t->getRandomToken());
+
+        // Default token mode with different length
+        p('Default 32-char token: ' . $t->getRandomToken(32));
+
+        // Long numerical token
+        $t->setNumericPool();
+        p('32-char numerical token: ' . $t->getRandomToken(32));
+
+        // Long no-capital alphanumerical token
+        $t->setNocapAlphanumericPool();
+        p('64-char numerical token: ' . $t->getRandomToken(64));
+
+
     }
 }

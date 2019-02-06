@@ -8,6 +8,7 @@ $this->pageTitle = 'Test List';
 <p><a href="/phplib">phplib</a></p>
 <p><a href="/phplib/test-translate">Translate</a></p>
 <p><a href="/phplib/test-environment">Environment</a></p>
+<p><a href="/phplib/test-token">Token</a></p>
 <hr />
 
 <h3>Array</h3>
