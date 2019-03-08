@@ -23,8 +23,11 @@ Apart from web-based tests there are also PHP-CLI sources. These files are place
 
 ## Raw
 
-There's a raw directory in the root folder, this library contains raw source files that are not connected
-with the framework; in other words these are stand-alone sample sources.
+There's a raw directory in the root folder, this library contains raw source files that are not connected with the framework; in other words these are stand-alone sample sources.
+
+## Scripts
+
+This folder contains utility scripts (they are stand-alone and does not depend on any 3rd-party libraries and/or packages.
 
 ## TODO
 
