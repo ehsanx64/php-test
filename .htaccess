@@ -2,9 +2,12 @@
     RewriteEngine On
     RewriteBase /
 
-    RewriteCond %{DOCUMENT_ROOT}/assets/$1 -f
-    RewriteRule ^(.*)$ assets/$1 [L]
+### FOLLOWING LINES COMMENTED BECAUSE WE WILL SERVE ASSETS FROM /PUBLIC FOLDER
+#    RewriteCond %{DOCUMENT_ROOT}/assets/$1 -f
+#    RewriteRule ^(.*)$ assets/$1 [L]
 
+
+### THESE LINES ARE VERY OLD ###
 	#RewriteCond %{THE_REQUEST} \s/assets/ [NC,OR]
 #	RewriteCond %{REQUEST_FILENAME} !-f
 #	RewriteRule ^(.*)$ public/index.php [L,QSA]
