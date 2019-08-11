@@ -27,3 +27,7 @@ $this->pageTitle = 'Test List';
 <h3>HashCrypt</h3>
 <h4>Hashing and cryptography related tests</h4>
 <a href="/hash-crypt/md5">md5</a>
+
+<h3>Ajax</h3>
+<h4>Tests related to Ajax</h4>
+<a href="/ajax/form-data">Upload images using Ajax and FormData</a>
