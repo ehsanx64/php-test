@@ -1,6 +1,6 @@
 <?php
 class Controller {
-    private $layout = 'materialize';
+    private $layout = 'Knight';
     private $pageTitle = 'Title';
 
     public function __construct() {
