@@ -9,6 +9,7 @@ $this->pageTitle = 'Test List';
 <p><a href="/phplib/test-translate">Translate</a></p>
 <p><a href="/phplib/test-environment">Environment</a></p>
 <p><a href="/phplib/test-token">Token</a></p>
+<p><a href="/phplib/test-shellface-python">Shellface (Python interfacing)</a></p>
 <hr />
 
 <h3>Array</h3>

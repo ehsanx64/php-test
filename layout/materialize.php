@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title><?php echo $this->pageTitle; ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen, projection"/>
-	<link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css" media="screen, projection"/>
+	<link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css" media="screen, projection"/>
+	<link type="text/css" rel="stylesheet" href="/materialize/css/font-awesome.min.css" media="screen, projection"/>
 </head>
 
 <body>
@@ -53,7 +53,7 @@
 		</div>
 	</footer>
 
-	<script type="text/javascript" src="/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/js/materialize.min.js"></script>
+	<script type="text/javascript" src="/materialize/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
 </body>
 </html>
