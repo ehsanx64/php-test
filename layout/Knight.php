@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Homepage</title>
-	<link rel="icon" href="favicon.png" type="image/png">
-	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+	<title>php-test</title>
+	<link rel="icon" href="/Knight/favicon.png" type="image/png">
+	<link rel="shortcut icon" href="/Knight/favicon.png" type="img/x-icon">
 
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
@@ -18,6 +18,8 @@
 	<link href="/Knight/css/responsive.css" rel="stylesheet" type="text/css">
 	<link href="/Knight/css/magnific-popup.css" rel="stylesheet" type="text/css">
 	<link href="/Knight/css/animate.css" rel="stylesheet" type="text/css">
+    <!-- Custom Styles -->
+    <link href="/Knight/css/custom.css" rel="stylesheet" type="text/css">
 
 	<script type="text/javascript" src="/Knight/js/jquery.1.8.3.min.js"></script>
 	<script type="text/javascript" src="/Knight/js/bootstrap.js"></script>
@@ -45,9 +47,9 @@
 			<figure class="logo animated fadeInDown delay-07s">
 				<a href="#"><img src="/Knight/img/logo.png" alt=""></a>
 			</figure>
-			<h1 class="animated fadeInDown delay-07s">Welcome To Knight Studios</h1>
+            <h1 class="animated fadeInDown delay-07s">Welcome To <b>PHP Tests</b></h1>
 			<ul class="we-create animated fadeInUp delay-1s">
-				<li>We are a digital agency that loves crafting beautiful websites.</li>
+				<li>Sample sources, tools, test of tools and more ...</li>
 			</ul>
 			<a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
 		</div>
@@ -61,7 +63,7 @@
 				<li><a href="#header">Home</a></li>
 				<li><a href="#service">Services</a></li>
 				<li><a href="#Portfolio">Portfolio</a></li>
-				<li class="small-logo"><a href="#header"><img src="/Knight/img/small-logo.png" alt=""></a></li>
+				<li class="small-logo"><a href="#header"><img src="/Knight/img/php-logo.png" alt=""></a></li>
 				<li><a href="#client">Clients</a></li>
 				<li><a href="#team">Team</a></li>
 				<li><a href="#contact">Contact</a></li>
@@ -384,7 +386,7 @@
 	</div>
 	<footer class="footer">
 		<div class="container">
-			<div class="footer-logo"><a href="#"><img src="/Knight/img/footer-logo.png" alt=""></a></div>
+			<div class="footer-logo"><a href="#"><img src="/Knight/img/logo.png" alt=""></a></div>
 			<span class="copyright">&copy; Knight Theme. All Rights Reserved</span>
 			<div class="credits">
 				<!--

@@ -1,0 +1,8 @@
+/* My Modification for Knight Template */
+ul.main-nav li.small-logo a {
+    width: 120px;
+}
+
+.logo {
+    width: 200px;
+}
