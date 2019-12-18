@@ -6,3 +6,7 @@ ul.main-nav li.small-logo a {
 .logo {
     width: 200px;
 }
+
+#tests .tabs-wrapper .tab-content {
+    padding: 1em;
+}
