@@ -10,3 +10,12 @@ ul.main-nav li.small-logo a {
 #tests .tabs-wrapper .tab-content {
     padding: 1em;
 }
+
+.tabs-wrapper h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+    font-size: 13px;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}

@@ -63,7 +63,8 @@
 				<li><a href="#header">Home</a></li>
                 <li><a href="#overview">Overview</a></li>
 				<li class="small-logo"><a href="#header"><img src="/Knight/img/php-logo.png" alt=""></a></li>
-                <li><a href="#tests">Tests</a></li>
+                <li><a href="#php">PHP</a></li>
+                <li><a href="#phplib">phplib</a></li>
                 <li><a href="#tools">Tools</a></li>
 			</ul>
 			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
@@ -117,38 +118,50 @@
         </div>
     </section>
 
-    <section class="main-section" id="tests">
+    <section class="main-section" id="php">
         <div class="container">
-            <h2>Tests</h2>
-            <h6>Test Categories</h6>
+            <h2>PHP</h2>
+            <h6>PHP Language and Built-In Libraries</h6>
             <div class="row">
                 <div class="col-xs-12 wow fadeInLeft delay-05s tabs-wrapper">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a data-toggle="tab" href="#php">PHP</a></li>
-                        <li role="presentation"><a data-toggle="tab" href="#phplib">phplib</a></li>
+                        <li role="presentation" class="active"><a data-toggle="tab" href="#php-arrays">Arrays</a></li>
                     </ul>
 
                     <div class="tab-content">
-                        <div id="php" class="tab-pane">
+                        <div id="php-arrays" class="tab-pane active">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <h3>PHP</h3>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div id="phplib" class="tab-pane">
+    <section class="main-section" id="phplib">
+        <div class="container">
+            <h2>phplib</h2>
+            <h6>General Purpose PHP Library</h6>
+            <div class="row">
+                <div class="col-xs-12 wow fadeInLeft delay-05s tabs-wrapper">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a data-toggle="tab" href="#phplib-date">Date</a></li>
+                        <li role="presentation"><a data-toggle="tab" href="#phplib-translate">Translate</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="phplib-date" class="tab-pane active">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <h3>phplib</h3>
                                 </div>
                             </div>
                         </div>
-
-                        <div id="two" class="tab-pane">
+                        <div id="phplib-translate" class="tab-pane">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <h3>Two</h3>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +219,6 @@
             <h6>Tests related to 3rd-party PHP tools and/or libraries</h6>
             <div class="row">
                 <div class="col-xs-12 wow fadeInLeft delay-05s">
-                    <?= $content ?>
                 </div>
             </div>
         </div>
