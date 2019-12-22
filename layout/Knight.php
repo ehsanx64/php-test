@@ -1,3 +1,7 @@
+<?php
+$phplib = new \controllers\PhplibController();
+$phplibTranslateContent = $phplib->testTranslateContent();
+?>
 <!doctype html>
 <html>
 
@@ -162,6 +166,7 @@
                         <div id="phplib-translate" class="tab-pane">
                             <div class="row">
                                 <div class="col-xs-12">
+                                    <?= $phplibTranslateContent; ?>
                                 </div>
                             </div>
                         </div>

@@ -2,7 +2,7 @@
 session_start();
 
 // Turn on errors
-error_reporting(!E_ALL);
+error_reporting(E_ALL);
 ini_set('display_errors', true);
 
 // Define some constants to make life easier

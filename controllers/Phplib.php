@@ -30,6 +30,12 @@ class PhplibController extends Controller {
         echo $this->render('test-translate');
     }
 
+    public function testTranslateContent() {
+        ob_start();
+        echo $this->render('test-translate-content');
+        return ob_get_clean();
+    }
+
     public function testEnvironment() {
         $e = new Environment();
 
