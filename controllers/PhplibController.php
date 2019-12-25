@@ -1,4 +1,6 @@
 <?php
+namespace controllers;
+
 use ehsanx64\phplib;
 use ehsanx64\phplib\Date;
 use ehsanx64\phplib\Module;
@@ -7,7 +9,7 @@ use ehsanx64\phplib\Environment;
 use ehsanx64\phplib\Token;
 use ehsanx64\phplib\Shellface;
 
-class PhplibController extends Controller {
+class PhplibController extends \Controller {
 
     public function __construct() {
     }
@@ -32,7 +34,7 @@ class PhplibController extends Controller {
 
     public function testTranslateContent() {
         ob_start();
-        echo $this->render('test-translate-content');
+        echo $this->renderContent('test-translate-content');
         return ob_get_clean();
     }
 

@@ -1,5 +1,5 @@
 <?php
-$phplib = new \controllers\PhplibController();
+$phplib = new controllers\PhplibController();
 $phplibTranslateContent = $phplib->testTranslateContent();
 ?>
 <!doctype html>

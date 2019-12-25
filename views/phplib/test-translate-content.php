@@ -12,7 +12,7 @@ p('Translating a complicated string...');
 
 $t2original = 'You have %s messages with %s unread';
 $t2originalParams = [2, 1];
-$t2xlated = $t->trn($t2original, extract($t2originalParams));
+$t2xlated = $t->trn($t2original, 2, 1);
 ?>
 
 <h3>Text Translation</h3>

@@ -18,6 +18,17 @@ class Controller {
         return $this->renderLayout($actionOutput);
     }
 
+    public final function renderContent($viewName, $params = array()) {
+        $controllerName = cleanControllerName(get_class($this));
+        $viewFilename = VIEW_DIR . DS . $controllerName . DS . $viewName . '.php';
+        ob_start();
+        ob_implicit_flush(false);
+        extract($params, EXTR_OVERWRITE);
+        require $viewFilename;
+        $actionOutput = ob_get_clean();
+        return $actionOutput;
+    }
+
     public function renderLayout($content, $layoutFile = '') {
         $defaultLayoutFile = LAYOUT_DIR . DS . $this->layout . '.php';
         if (empty($layoutFile) || !file_exists(LAYOUT_DIR . DS . $layoutFile)) {

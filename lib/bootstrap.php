@@ -23,30 +23,11 @@ require LIB_DIR . DS . 'Database.php';
 require LIB_DIR . DS . 'Url.php';
 require LIB_DIR . DS . 'Model.php';
 
+//
+registerAutoloader();
+
 // Get routing parameters
-if (isset($_GET['r'])) {
-	$chopped = explode('/', $_GET['r']);
-	if (count($chopped) <= 1) {
-		$get[] = $chopped[0];
-	} else {
-		$get = $chopped;
-	}
-} else {
-	$get = array(
-		'site',
-		'index'
-	);
-}
-
-// If no controller specified use default
-if (!isset($get[0]) || empty($get[0])) {
-	$get[0] = 'site';
-}
-
-// If no action specified use default
-if (!isset($get[1]) || empty($get[1])) {
-	$get[1] = 'index';
-}
+$get = getRoutingParams();
 
 // Construct controller path
 // We need to check for hyphens in controller part
@@ -61,40 +42,6 @@ if (strpos($get[0], '-') >= 0) {
 	$controller = ucfirst($get[0]);
 }
 
-$controllerFile = CONTROLLER_DIR . DS . $controller . '.php';
+$controllerFile = getControllerPath($controller);
+executeControllerAction($controller, $controllerFile, $get);
 
-if (file_exists($controllerFile)) {
-	// Include the controller file
-	require $controllerFile;
-
-	// Get name of controller
-	$controllerName = $controller . 'Controller';
-
-	// Instantiate controller class
-	$controllerInstance = new $controllerName();
-
-	// Get action name
-	// We need to check for hyphens in action part as well
-	if (strpos($get[1], '-') >= 0) {
-		$aparts = explode('-', $get[1]);
-		$method = $aparts[0];
-
-		for ($i = 1; $i < count($aparts); $i++) {
-			$method .= ucfirst($aparts[$i]);
-		}
-	} else {
-		$method = $get[1];
-	}
-
-	// If a method with action name exists
-	if (method_exists($controllerInstance, $method)) {
-		// Run the method (action)
-		$controllerInstance->$method();
-	} else {
-		// There is no such controller action
-		die('Controller method not found');
-	}
-} else {
-	// There is no such controller
-	die('Controller not found');
-}
