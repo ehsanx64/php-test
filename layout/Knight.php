@@ -22,6 +22,9 @@ $phplibTranslateContent = $phplib->testTranslateContent();
 	<link href="/Knight/css/responsive.css" rel="stylesheet" type="text/css">
 	<link href="/Knight/css/magnific-popup.css" rel="stylesheet" type="text/css">
 	<link href="/Knight/css/animate.css" rel="stylesheet" type="text/css">
+    <link href="/prismjs/prism.css" rel="stylesheet" type="text/css">
+    <link href="/prismjs/prism-ghcolors.css" rel="stylesheet" type="text/css">
+
     <!-- Custom Styles -->
     <link href="/Knight/css/custom.css" rel="stylesheet" type="text/css">
 
@@ -30,6 +33,8 @@ $phplibTranslateContent = $phplib->testTranslateContent();
 	<script type="text/javascript" src="/Knight/js/jquery-scrolltofixed.js"></script>
 	<script type="text/javascript" src="/Knight/js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="/Knight/js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="/prismjs/clipboard.min.js"></script>
+    <script type="text/javascript" src="/prismjs/prism.js"></script>
 	<script type="text/javascript" src="/Knight/js/wow.js"></script>
 	<script type="text/javascript" src="/Knight/js/classie.js"></script>
 	<script type="text/javascript" src="/Knight/js/magnific-popup.js"></script>

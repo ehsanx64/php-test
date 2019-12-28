@@ -23,7 +23,6 @@ require LIB_DIR . DS . 'Database.php';
 require LIB_DIR . DS . 'Url.php';
 require LIB_DIR . DS . 'Model.php';
 
-//
 registerAutoloader();
 
 // Get routing parameters
