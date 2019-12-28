@@ -8,8 +8,8 @@ class Controller {
     }
 
     public final function render($viewName, $params = array()) {
-        $viewFilename = VIEW_DIR . DS . str_replace('controller', '', strtolower(get_class($this)))
-            . DS . $viewName . '.php';
+        $controllerName = cleanControllerName(get_class($this));
+        $viewFilename = VIEW_DIR . DS . $controllerName . DS . $viewName . '.php';
         ob_start();
         ob_implicit_flush(false);
         extract($params, EXTR_OVERWRITE);

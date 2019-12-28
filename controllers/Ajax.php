@@ -8,7 +8,7 @@ class AjaxController extends Controller {
     }
 
     public function formData() {
-        echo $this->render("formData");
+        echo $this->render("formdata");
     }
 
     public function handleFormData() {
