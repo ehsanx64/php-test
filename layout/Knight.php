@@ -60,7 +60,7 @@ $phplibTranslateContent = $phplib->testTranslateContent();
 			<ul class="we-create animated fadeInUp delay-1s">
 				<li>Sample sources, tools, test of tools and more ...</li>
 			</ul>
-			<a class="link animated fadeInUp delay-1s servicelink" href="#overview">Overview</a>
+			<a class="link animated fadeInUp delay-1s servicelink" href="#php">Explore</a>
 		</div>
 	</header>
 	<!--header-end-->
@@ -70,9 +70,11 @@ $phplibTranslateContent = $phplib->testTranslateContent();
 		<div class="container">
 			<ul class="main-nav">
 				<li><a href="#header">Home</a></li>
-                <li><a href="#overview">Overview</a></li>
-				<li class="small-logo"><a href="#header"><img src="/Knight/img/php-logo.png" alt=""></a></li>
                 <li><a href="#php">PHP</a></li>
+                <?php /* --dis--
+                <li><a href="#overview">Overview</a></li>
+    --/dis */ ?>
+				<li class="small-logo"><a href="#header"><img src="/Knight/img/php-logo.png" alt=""></a></li>
                 <li><a href="#phplib">phplib</a></li>
                 <li><a href="#tools">Tools</a></li>
 			</ul>
@@ -80,6 +82,7 @@ $phplibTranslateContent = $phplib->testTranslateContent();
 		</div>
 	</nav>
 
+    <?php /* --dis--
     <section class="main-section" id="overview">
         <div class="container">
             <h2>Overview</h2>
@@ -126,6 +129,8 @@ $phplibTranslateContent = $phplib->testTranslateContent();
             </div>
         </div>
     </section>
+
+    --/dis */ ?>
 
     <section class="main-section" id="php">
         <div class="container">
@@ -181,47 +186,6 @@ $phplibTranslateContent = $phplib->testTranslateContent();
         </div>
     </section>
 
-	<section class="main-section alabaster">
-		<div class="container">
-			<div class="row">
-				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-					<img src="/Knight/img/iphone.png" alt="">
-				</figure>
-				<div class="col-lg-7 col-sm-8 featured-work">
-					<h2>featured work</h2>
-					<P class="padding-b">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</P>
-					<div class="featured-box">
-						<div class="featured-box-col1 wow fadeInRight delay-02s">
-							<i class="fa fa-magic"></i>
-						</div>
-						<div class="featured-box-col2 wow fadeInRight delay-02s">
-							<h3>magic of theme development</h3>
-							<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-						</div>
-					</div>
-					<div class="featured-box">
-						<div class="featured-box-col1 wow fadeInRight delay-04s">
-							<i class="fa fa-gift"></i>
-						</div>
-						<div class="featured-box-col2 wow fadeInRight delay-04s">
-							<h3>neatly packaged</h3>
-							<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-						</div>
-					</div>
-					<div class="featured-box">
-						<div class="featured-box-col1 wow fadeInRight delay-06s">
-							<i class="fa fa-dashboard"></i>
-						</div>
-						<div class="featured-box-col2 wow fadeInRight delay-06s">
-							<h3>SEO optimized</h3>
-							<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-						</div>
-					</div>
-					<a class="Learn-More" href="#">Learn More</a>
-				</div>
-			</div>
-		</div>
-	</section>
 
     <section class="main-section" id="tools">
         <div class="container">
@@ -234,25 +198,18 @@ $phplibTranslateContent = $phplib->testTranslateContent();
         </div>
     </section>
 
-	<div class="c-logo-part">
-		<!--c-logo-part-start-->
-		<div class="container">
-			<ul>
-				<li><a href="#"><img src="/Knight/img/c-liogo1.png" alt=""></a></li>
-				<li><a href="#"><img src="/Knight/img/c-liogo2.png" alt=""></a></li>
-				<li><a href="#"><img src="/Knight/img/c-liogo3.png" alt=""></a></li>
-				<li><a href="#"><img src="/Knight/img/c-liogo4.png" alt=""></a></li>
-				<li><a href="#"><img src="/Knight/img/c-liogo5.png" alt=""></a></li>
-			</ul>
-		</div>
-	</div>
 
+    <?php /* --dis--
 	<section class="business-talking">
 		<!--business-talking-start-->
 		<div class="container">
 			<h2>Let’s Talk Business.</h2>
 		</div>
 	</section>
+    --/dis */ ?>
+
+
+    <?php /* --dis--
 	<!--business-talking-end-->
 	<div class="container">
 		<section class="main-section contact" id="contact">
@@ -313,6 +270,9 @@ $phplibTranslateContent = $phplib->testTranslateContent();
 			</div>
 		</section>
 	</div>
+
+    --/dis */ ?>
+
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-logo"><a href="#"><img src="/Knight/img/logo.png" alt=""></a></div>
